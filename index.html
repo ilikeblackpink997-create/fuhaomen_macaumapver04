@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>健康旅行 App</title>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<style>
+body { margin:0; font-family: Arial; background:#f5f7fa; }
+.page { display:none; padding:20px; }
+.active { display:block; }
+
+button { padding:10px 15px; margin:5px; cursor:pointer; }
+.card { background:white; padding:15px; border-radius:10px; margin-top:10px; }
+
+#map { height:400px; border-radius:12px; }
+
+.topbar {
+  display:flex; justify-content:space-between; align-items:center;
+  padding:10px 15px; background:#0a7; color:white;
+}
+
+.lang { cursor:pointer; }
+
+.small { font-size:13px; color:#555; }
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+  <div>🌿 健康旅行 · Health Travel</div>
+  <div class="lang">🌍 語言 / Language</div>
+</div>
+
+<div class="page active">
+  <h1>健康旅行</h1>
+  <p>我在的 · AI行程規劃 App</p>
+  <button onclick="alert('start')">開始</button>
+</div>
+
+</body>
+</html>
